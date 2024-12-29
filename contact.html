@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend Developer Profile/Contact Me</title>
+    <style>
+        body {
+            font-family: "Players";
+            background-color: #1e1e2f;
+            color: #e0e0e0;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #30336b;
+            color: #ffffff;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #535c68;
+            padding: 10px;
+        }
+        
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+            color: #f9ca24;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #2f3640;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .profile {
+            text-align: center;
+        }
+
+        .profile img {
+            width: auto;
+            height: 10em;
+            border-radius: 50%;
+            border: 4px solid #30336b;
+        }
+
+        .profile h1 {
+            color: #f5f6fa;
+            margin: 10px 0;
+        }
+
+        .profile p {
+            color: #dcdde1;
+            font-size: 18px;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #30336b;
+            color: #ffffff;
+            margin-top: 10em;
+        }
+
+        form label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+
+        form input, form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #718093;
+            border-radius: 5px;
+            background-color: #2c3e50;
+            color: #ecf0f1;
+        }
+
+        form button {
+            background-color: #27ae60;
+            color: #ffffff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .icon{
+            line-height: 2em;
+        }
+
+        .icon img{
+            width: 1.5em;
+        }
+
+        .icon a{
+            margin-left: 3em;
+            color: #ffffff;
+        }
+
+        form button:hover {
+            background-color: #2ecc71;
+        }
+
+        form .in-text{
+            width: 20em;
+            font-family: "Players";
+        }
+
+        form .mes{
+            width: 20em;
+            height: 7em;
+            font-family: "Players";
+        }
+
+        form .btn{
+            width: 10em;
+            font-family: "Players";
+            display: flex;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Contact Page</h1>
+    </header>
+
+    <nav>
+        <a href="in_project.html">Home</a>
+        <a href="about.html">About Me</a>
+        <a href="projects_page.html">Projects</a>
+        <a href="technology.html">technologies</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <div class="container">
+        <div class="profile">
+            <img src="cute.png" alt="Profile Picture">
+            <h1>Abubakar Jamiu</h1>
+            <p>Student | Aspiring Frontend Developer</p>
+        </div>
+        <div>
+            <h2>Get in Touch</h2>
+            <h4>Let's Connect!</h4>
+            <p>Whether you have a question, a project in mind, or just want to talk about frontend development, I did love to hear from you. Feel free to reach out using any of the contact methods below, and I will get back to you as soon as possible.</p>
+            <h4>Contact Information:</h4>
+            <p>
+                <div class="icon">
+                    <img src="email.png" alt="Email Icon" ><a href="mailto:abubakarjamiu237@gmail.com">abubakarjamiu237@gmail.com</a>
+                </div>
+                <div  class="icon">
+                    <img src="phone.png" alt="Telephone Icon" ><img src="whatsapp.png" alt=""><a href="tel:+2347087565356">+2347087565356</a>
+                </div >
+                <div class="icon">
+                    <img src="linkedin.png" alt="LinkedIn Icon"><a href="#" >Abubakar Jamiu</a>
+                </div >
+                <div  class="icon">
+                    <img src="github.png" alt="Github Icon"><a href="https://github.com/AbububakarJamiu">github.com/AbububakarJamiu</a>
+                </div>
+                <div  class="icon">
+                    <img src="facebook.png" alt="Facebook Icon" ><a href="">Jamiu Abububakar</a>
+                </div>
+                <div  class="icon">
+                    <img src="instagram.png" alt="Instagram Icon" ><a href="#">@jamiu_vibes</a>
+                </div>
+            </p>
+            <h4>Or, Send Me a Message Directly:</h4>
+            
+        </div>
+        <form action="Contact Form">
+            <label for="full name">Full Name</label>
+            <input type="text" placeholder="Enter Full Name" class="in-text" required>
+            <label for="full name">Email</label>
+            <input type="email" placeholder="Enter Email Address" class="in-text"required>
+            <label for="full name"  >Message</label>
+            <textarea id="message" name="message" rows="4" cols="50" class="mes" placeholder="Type Messege Here" required></textarea>
+            <input type="submit" class="btn">
+        </form>
+    
+        <p>I am always excited to connect with fellow developers, students, or anyone interested in frontend development. Lets collaborate, learn, and grow together!</p>
+    </div>
+
+    <footer>
+        <p>&copy; 2024</p>
+        <p>Buiild by Abubakar Jamiu</p>
+    </footer>
+</body>
+</html>

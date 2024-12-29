@@ -1,107 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Frontend Developer Profile</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Project</title>
     <style>
-        body {
-            font-family: "Groovy Yellow";
-            background-color: #f5deb3; 
-            margin: 0;
-            padding: 0;
-        }
+      body {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #f4f4f4;
+        font-family: Arial, sans-serif;
+        font-size: 0.9em;
+      }
+      .main {
+        width: 90%;
+        max-width: 500px; /* Limits the size for larger devices */
+        border-radius: 10px;
+        border: 3px solid black;
+        padding: 15px;
+        background-color: white;
+      }
+      .form input {
+        width: 100%;
+        height: 30px;
+        border-radius: 7px;
+        font-size: 0.9em;
+        padding: 4px;
+        background-color: rgb(218, 214, 214);
+      }
+      .colunmtable,
+      .filtercode {
+        border: 2px solid rgb(146, 145, 145);
+        border-radius: 7px;
+        padding: 10px;
+        margin-top: 10px;
+        font-size: 0.9em;
+      }
+      .table {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+      .image {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+      .image label {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+      }
+      button {
+        background-color: blue;
+        color: white;
+        height: 35px;
+        width: 100%;
+        border-radius: 5px;
+        border: none;
+        margin-top: 15px;
+      }
+      .button {
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+        margin-top: 20px;
+      }
+      .button a {
+        flex: 1;
+        padding: 10px;
+        border-radius: 5px;
+        text-align: center;
+        text-decoration: none;
+        color: white;
+      }
+      .button .cancel {
+        background-color: red;
+      }
+      .button .execute {
+        background-color: blue;
+      }
 
-        header {
-            background-color: #4682b4;
-            color: #fff;
-            padding: 15px;
-            text-align: center;
+      /* Responsive styles */
+      @media (max-width: 768px) {
+        .main {
+          width: 100%;
+          padding: 10px;
         }
-
-        nav {
-            display: flex;
-            justify-content: center;
-            background-color: #5f9ea0;
-            padding: 10px;
+        button {
+          font-size: 1em;
         }
-
-        nav a {
-            color: #fff;
-            text-decoration: none;
-            margin: 0 15px;
-            font-weight: bold;
-        }
-
-        nav a:hover {
-            text-decoration: underline;
-            color: #ff7f50;
-        }
-
-        .container {
-            max-width: 800px;
-            margin: 20px auto;
-            background-color: #ffefd5;
-            border-radius: 10px;
-            padding: 20px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        }
-
-        .profile {
-            text-align: center;
-        }
-
-        .profile img {
-            width: auto;
-            height: 10em;
-            border-radius: 50%;
-            border: 4px solid #4682b4;
-        }
-
-        .profile h1 {
-            color: #2f4f4f;
-            margin: 10px 0;
-        }
-
-        .profile p {
-            color: #696969;
-            font-size: 18px;
-        }
-
-        footer {
-            text-align: center;
-            padding: 10px;
-            background-color: #4682b4;
-            color: #fff;
-            margin-top: 10em;
-        }
+      }
     </style>
-</head>
-<body>
-    <header>
-        <h1>Welcome to My Profile Pages</h1>
-    </header>
+  </head>
+  <body>
+    <div class="main">
+      <div class="form">
+        <label for="empFirstName"
+          >Table Name<em style="color: red">*</em></label
+        >
+        <input type="text" name="empFirstName" placeholder="Table Name" />
+      </div>
 
-    <nav>
-        <a href="in_project.html">Home</a>
-        <a href="about.html">About Me</a>
-        <a href="projects_page.html">Projects</a>
-        <a href="technology.html">technologies</a>
-        <a href="contact.html">Contact</a>
-    </nav>
-
-    <div class="container">
-        <div class="profile">
-            <img src="images/cute.png" alt="Profile Picture">
-            <h1>Abubakar Jamiu</h1>
-            <p>Student | Aspiring Frontend Developer</p>
+      <div class="table">
+        <div class="colunmtable">
+          <p>Column Name:</p>
+          <input type="checkbox" checked /> Division <br />
+          <input type="checkbox" /> Division Code <br />
+          <input type="checkbox" /> Portfolio <br />
+          <input type="checkbox" /> Portfolio Code <br />
+          <input type="checkbox" /> Region <br />
+          <input type="checkbox" /> Region Code
         </div>
-            <p>Hello! I'm a frontend development student with a passion for building visually appealing and interactive websites. I enjoy learning new technologies and enhancing my skills in HTML, CSS, and JavaScript.</p>  
-    </div>
 
-    <footer>
-        <p>&copy; 2024</p>
-        <p>Buiild by Abubakar Jamiu</p>
-    </footer>
-</body>
+        <div class="image">
+          <label
+            >Table 1 <img src="./candlechart.png" alt="Image" width="20"
+          /></label>
+          <label
+            >Table 2 <img src="./redstuff.png" alt="Image" width="20"
+          /></label>
+          <label
+            >Table 3 <img src="./candlechart.png" alt="Image" width="20"
+          /></label>
+          <label
+            >Table 4 <img src="./redstuff.png" alt="Image" width="20"
+          /></label>
+        </div>
+      </div>
+
+      <div class="filtercode">
+        <p>Filter:</p>
+        <input type="checkbox" /> Division Code <br />
+        <input type="text" placeholder="Enter Division Code" /><br />
+        <input type="checkbox" /> Portfolio Code <br />
+        <input type="text" placeholder="Enter Portfolio Code" /><br />
+        <input type="checkbox" /> Region Code <br />
+        <input type="text" placeholder="Enter Region Code" />
+      </div>
+
+      <button>+ Add</button>
+      <div class="button">
+        <a href="#" class="cancel">Cancel</a>
+        <a href="#" class="execute">Execute</a>
+      </div>
+    </div>
+  </body>
 </html>
